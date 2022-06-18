@@ -39,7 +39,7 @@
     </dependencies>
 
     <build>
-        <finalName>sample.jar</finalName>
+        <finalName>sample</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
