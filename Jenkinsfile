@@ -20,5 +20,16 @@ node {
        
      }
     
+     stage('dockerizing') {
+        sh 'pwd'
+        dir('springboot-sample') {
+           sh 'pwd'
+           sh 'docker build -t jm2t2r/springboot-sample:dev .' 
+        }
+        sh 'pwd'
+       
+     }
+    
+    
     
 }
