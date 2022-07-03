@@ -13,7 +13,7 @@ node {
      }
     
      stage('build') {
-          sh 'chmod 755 mvnw' 
+          sh 'chmod 755 ./mvnw' 
           sh './mvnw clean package'
      }
     
