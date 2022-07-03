@@ -34,7 +34,7 @@ node {
         sh 'pwd'
         dir('springboot-sample') {
            sh 'pwd'
-           sh 'docker push jm2t2r/springboot-sample:dev .' 
+           sh 'docker push jm2t2r/springboot-sample:dev ' 
         }
         sh 'pwd'
        
