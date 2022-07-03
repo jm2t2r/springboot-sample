@@ -9,11 +9,15 @@ node {
      }
     
     stage('build') {
-          sh 'cd springboot-sample'
-          sh 'pwd'
-          sh 'ls -al mvnw'
-          sh 'chmod 755 mvnw' 
-          sh './mvnw clean package'
+        steps {
+            sh "pwd"
+            dir('springboot-sample') {
+              sh "pwd"
+            }
+            sh "pwd"
+        } 
+        sh 'chmod 755 ./mvnw' 
+        sh './mvnw clean package'
      }
     
     
