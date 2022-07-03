@@ -40,7 +40,11 @@ node {
        
      }
     
-    
+     stage('deploy to k8s') {
+        sh 'pwd'
+        sh 'kubectl delete -f /home/linux/yaml/springboot-sample.yaml'
+        sh 'kubectl apply -f /home/linux/yaml/springboot-sample.yaml'
+     }
     
     
 }
