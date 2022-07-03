@@ -4,8 +4,12 @@ node {
         sh 'java -version' 
     } 
     
-    stage('Clone repository') {
+    stage('stage 2') {
           sh 'docker version' 
+     }
+    
+     stage('Clone repository') {
+          sh 'git clone https://github.com/jm2t2r/springboot-sample.git' 
      }
     
 }
