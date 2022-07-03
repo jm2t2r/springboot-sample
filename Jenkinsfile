@@ -9,6 +9,7 @@ node {
      }
     
     stage('build') {
+          sh 'cd springboot-sapmple'
           sh 'chmod 755 ./mvnw' 
           sh './mvnw clean package'
      }
