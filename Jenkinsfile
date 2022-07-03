@@ -8,11 +8,7 @@ node {
           sh 'docker version' 
      }
     
-     stage('Clone repository') {
-          sh 'git clone https://github.com/jm2t2r/springboot-sample.git' 
-     }
-    
-     stage('build') {
+    stage('build') {
           sh 'chmod 755 ./mvnw' 
           sh './mvnw clean package'
      }
