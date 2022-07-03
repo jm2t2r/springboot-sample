@@ -2,7 +2,7 @@ echo "---build start---"
 
 stage('Checkout Stage') {
     echo "---Checkout---"
-    sh "ls -al"
+   checkout scm
 }
 
 stage('Build Stage') {
