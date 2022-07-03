@@ -2,16 +2,16 @@ echo "---build start---"
 
 stage('Checkout Stage') {
     echo "---Checkout---"
-    ls -al
+    sh "ls -al"
 }
 
 stage('Build Stage') {
     echo "---Build Stage---"
-    cd ~
-    docker version
+    sh "cd ~"
+    sh "docker version"
 }
 
 stage('Push Stage') {
     echo "---Push Stage---"
-    java -version
+    sh "java -version"
 }
